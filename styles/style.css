@@ -40,6 +40,12 @@ img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+img:hover {
+  opacity: 0.8;
 }
 
 .active {
@@ -162,7 +168,6 @@ main {
   padding-left: 5px;
 }
 
-/* 1. გვერდის ძირითადი სტილი */
 .page-title {
   font-family: "bpg-arial-caps", sans-serif;
   color: #2c3e50;
@@ -171,29 +176,26 @@ main {
   font-family: "BPG Arial Caps", sans-serif;
 }
 
-/* 2. ქარდების კონტეინერის სტილი */
 .unique-card {
   background: #ffffff;
-  border-radius: 10px; /* მომრგვალებული კუთხეები */
+  border-radius: 10px; 
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* ძალიან ნაზი ჩრდილი */
   transition: all 0.3s ease;
-  height: 100%; /* რომ ყველა ქარდი თანაბარი სიმაღლის იყოს */
+  height: 100%; 
   display: flex;
   flex-direction: column;
   border: 1px solid #f1f1f1;
 }
 
-/* Hover ეფექტი */
 .unique-card:hover {
   transform: translateY(-7px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* 3. სურათის სტილი */
 .card-img-wrapper {
   width: 100%;
-  height: 200px; /* ფიქსირებული სიმაღლე სურათებისთვის */
+  height: 200px; 
   overflow: hidden;
   border-radius: 0;
 }
@@ -206,12 +208,11 @@ main {
   border-radius: 0;
 }
 
-/* 4. ტექსტური ნაწილი */
 .card-body {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* უზრუნველყოფს შიდა ელემენტების სწორ განაწილებას */
+  flex-grow: 1; 
 }
 
 .card-body h3 {
@@ -231,9 +232,8 @@ main {
   font-family: "BPG Ingiri", sans-serif;
 }
 
-/* 5. "ვრცლად" ლინკის სტილი */
 .read-more {
-  color: #2c3e50; /* ზუსტად ის ცისფერი, რაც შენს სურათზეა */
+  color: #2c3e50; 
   text-decoration: none;
   font-weight: bold;
   font-size: 15px;
@@ -248,7 +248,67 @@ main {
   text-decoration: underline;
 }
 
-/* 6. დაშორება რიგებს შორის */
 .row > div {
-  margin-bottom: 40px; /* დაშორება ზედა და ქვედა რიგს შორის */
+  margin-bottom: 40px;
+}
+
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px; 
+}
+
+.social-icons a {
+  color: #00d2ff; 
+  font-size: 22px; 
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: white; 
+  transform: scale(1.1); 
+}
+
+.online-info h2 {
+  color: #2c3e50;
+  font-family: "BPG Ingiri", sans-serif;
+}
+
+.online-info .border {
+  transition: all 0.3s ease;
+}
+
+.online-info .border:hover {
+  background-color: #f0faff;
+  border-color: #00acee !important;
+}
+
+.social-links-large a {
+  color: #2c3e50;
+  transition: 0.3s;
+}
+
+.social-links-large a:hover {
+  color: #00acee;
+  transform: scale(1.2);
+}
+
+.text-info {
+  color: #2c3e50 !important;
+}
+
+.text-muted p {
+  font-family: "BPG Ingiri", sans-serif;
+}
+
+h5 {
+  font-family: "BPG Ingiri", sans-serif;
+}
+
+p {
+  font-family: "BPG Ingiri", sans-serif;
+}
+
+strong {
+  font-family: "BPG Ingiri", sans-serif;
 }
