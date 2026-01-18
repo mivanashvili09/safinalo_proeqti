@@ -199,7 +199,7 @@ main {
 .page-title {
   font-family: "bpg-arial-caps", sans-serif;
   color: #2c3e50;
-  font-size: 26px;
+  font-size: 32px;
   margin-bottom: 50px;
   font-family: "BPG Arial Caps", sans-serif;
 }
@@ -210,7 +210,7 @@ main {
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   flex-direction: column;
   border: 1px solid #f1f1f1;
@@ -325,8 +325,9 @@ main {
   color: #2c3e50 !important;
 }
 
-.text-muted p {
+p {
   font-family: "BPG Ingiri", sans-serif;
+  line-height: 20px;
 }
 
 h5 {
@@ -443,7 +444,7 @@ h4 {
 }
 
 .form-group {
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
 .form-group input,
@@ -471,7 +472,9 @@ h4 {
   border-radius: 8px;
   font-family: "BPG Arial Caps", sans-serif;
   cursor: pointer;
-  transition: background 0.3s, transform 0.2s;
+  transition:
+    background 0.3s,
+    transform 0.2s;
 }
 
 .submit-btn:hover {
@@ -581,7 +584,7 @@ h5 {
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .hero-content h1 {
     font-size: 28px;
   }
@@ -595,6 +598,7 @@ h5 {
   color: white;
   font-weight: bold;
   font-size: larger;
+  line-height: 25px;
 }
 
 .openlab {
@@ -629,15 +633,15 @@ h5 {
 
 .feature-card:hover {
   transform: translateY(-10px);
-  border-color: #00a3e0;
+  border-color: #bdd99e;
   box-shadow: 0 10px 30px rgba(0, 163, 224, 0.1);
 }
 
 .icon-wrapper {
   width: 70px;
   height: 70px;
-  background-color: rgba(0, 163, 224, 0.1);
-  color: #00a3e0;
+  background-color: #bdd99e55;
+  color: #bdd99e;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -686,4 +690,168 @@ h5 {
   background-size: cover;
   background-position: center;
   margin-top: -60px;
+}
+
+.teaching {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  background-image: url("../images/teacher.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: -40px;
+}
+
+.about-section {
+  background-color: #ffffff;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.about-img-container {
+  position: relative;
+  padding: 10px;
+}
+
+.about-img-container img {
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.about-img-container:hover img {
+  transform: scale(1.02);
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: -20px;
+  right: 10px;
+  background-color: #bdd99e;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: rgba(189, 217, 158, 0.821);
+  min-width: 140px;
+}
+
+.experience-badge span {
+  font-size: 40px;
+  font-weight: bold;
+  display: block;
+  line-height: 50px;
+  color: #58614d;
+}
+
+.experience-badge p {
+  margin: 0;
+  font-size: 14px;
+  font-family: "BPG Arial Caps", sans-serif;
+}
+
+.about-text {
+  font-family: "BPG Ingiri", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #5d6d7e;
+  margin-bottom: 20px;
+}
+
+.about-features span {
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 15px;
+  color: #2c3e50;
+}
+
+.img1 {
+  height: 400px;
+  width: 1000px;
+}
+
+.fa-check-circle {
+  color: #bdd99e;
+}
+
+.staff-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.staff-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.staff-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.staff-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.staff-card:hover .staff-overlay {
+  opacity: 1;
+}
+
+.staff-card:hover img {
+  transform: scale(1.08);
+}
+
+.staff-details {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.staff-details h3 {
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 17px;
+  color: #333;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+
+.staff-details p {
+  font-family: "BPG Ingiri", sans-serif;
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+}
+
+.row1 {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: space-evenly;
+  margin-bottom: 200px;
+  margin-top: 20px;
+}
+
+.col-lg-4 {
+  flex: 0 0 auto !important;
+  width: 20% !important;
+}
+
+.texttt {
+  display: inline;
+}
+
+.about-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+
+.about-features :hover {
+  color: #777;
+  padding-left: 10px;
 }
